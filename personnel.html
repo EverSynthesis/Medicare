@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-personnel.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app-personnel.js" defer></script>
+    <title>Document</title>
+</head>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <img width="300" height=auto src="images/Medihire2.png" alt="a nice logo">
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="credential.html" class="navbar__links">Account</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="personnel.html" class="navbar__links">Personnel Finder</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="login.html" class="button">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<body>
+    <div class="search-wrapper">
+        <label for="search">Search Users</label>
+        <input type="search" id="search" data-search>
+    </div>
+    <div class="user-cards" data-user-cards-container></div>
+    <template data-user-template>
+        <div class="card">
+            <div class="header" data-header></div>
+            <div class="body" data-body></div>
+        </div>
+    </template>
+    <script src="app.js"></script>
+</body>
+</html>
